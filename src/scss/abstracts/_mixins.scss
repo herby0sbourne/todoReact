@@ -1,0 +1,90 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+/// Make a context based selector a little more friendly
+/// @author Kitty Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}
+
+// xxsmall - 22.5em = 360px
+// xsmall - 23.4375em = 375px
+// small - 36em = 576px
+// medium - 48em = 768px
+// large - 62em = 992px
+// xlarge - 112.5em = 1800px
+
+// 1em = 16px
+//  ORIGINAL BREAKPOINT
+@mixin breakpoint($breakpoint) {
+  @if $breakpoint == xxsmall {
+    @media (max-width: 23.4375em) {
+      @content;
+    }
+  }
+  @if $breakpoint == xsmall {
+    @media (max-width: 36em) {
+      @content;
+    }
+  }
+  @if $breakpoint == small {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == mediumsm {
+    @media (max-width: 48em) {
+      @content;
+    }
+  }
+  @if $breakpoint == medium {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == large {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tabletUp {
+    @media (min-width: 48em) {
+      @content;
+    }
+  }
+  @if $breakpoint == mediumup {
+    @media (min-width: 56.3125em) {
+      @content;
+    }
+  }
+  @if $breakpoint == xlarge {
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}

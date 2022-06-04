@@ -1,9 +1,19 @@
 .heading-background {
-  background: url('./images/bg-desktop-dark.jpg') no-repeat center / cover;
-  height: 300px;
+  height: 200px;
+  background: url('./images/bg-mobile-dark.jpg') no-repeat center / cover;
+
+  @include breakpoint(tabletUp) {
+    background: url('./images/bg-desktop-dark.jpg') no-repeat center / cover;
+    height: 300px;
+  }
 }
 
 .light .heading-background {
-  background: url('./images/bg-desktop-light.jpg') no-repeat center / cover;
-  height: 300px;
+  height: 200px;
+  background: url('../images/bg-mobile-light.jpg') no-repeat center / cover;
+
+  @include breakpoint(tabletUp) {
+    background: url('./images/bg-desktop-light.jpg') no-repeat center / cover;
+    height: 300px;
+  }
 }

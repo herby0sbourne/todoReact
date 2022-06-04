@@ -1,7 +1,4 @@
 .todo {
-  font-size: 1.8rem;
-  height: 6.5rem;
-
   color: $--Light-Grayish-Blue;
   font-size: 1.6rem;
   display: flex;
@@ -26,6 +23,11 @@
       visibility: visible;
     }
   }
+
+  @include breakpoint(tabletUp) {
+    font-size: 1.8rem;
+    height: 6.5rem;
+  }
 }
 
 .circle.completed::after {
@@ -39,17 +41,32 @@
 }
 
 .todo-item {
-  padding-left: 1.2rem;
+  margin-left: 1.2rem;
   width: 100%;
   height: inherit;
   display: flex;
   align-items: center;
+
   // pointer-events: none;
 }
 
-.remove.hidden {
+.todo-item,
+.todo-left,
+.clear-todo {
+  font-size: 1.2rem;
+  @include breakpoint(tabletUp) {
+    font-size: 1.6rem;
+  }
+}
+
+.remove {
   width: 1.8rem;
   height: 1.8rem;
   background: url('./images/icon-cross.svg') no-repeat center / contain;
-  visibility: hidden;
+}
+
+.remove.hidden {
+  @include breakpoint(tabletUp) {
+    visibility: hidden;
+  }
 }

@@ -1,4 +1,8 @@
 .container {
-  margin: 0 auto;
-  max-width: 54rem;
+  padding: 0 2.5rem;
+
+  @include breakpoint(tabletUp) {
+    margin: 0 auto;
+    max-width: 54rem;
+  }
 }

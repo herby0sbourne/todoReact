@@ -1,4 +1,5 @@
 .todo-options {
+  position: relative;
   color: $--Dark-Grayish-Blue;
   display: flex;
   justify-content: space-between;
@@ -6,12 +7,37 @@
   font-size: 1.5rem;
   padding: 0 1.7rem;
   height: 5.2rem;
+
+  @include breakpoint(tabletUp) {
+    position: initial;
+  }
 }
 
 .todo-filters {
-  width: 35%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background: inherit;
+  padding: inherit;
+  background-color: $--Very-Dark-Desaturated-Blue;
+  border-radius: 0.8rem;
+  margin-top: 1.6rem;
+  height: inherit;
+
+  @include breakpoint(tabletUp) {
+    border-radius: initial;
+    background-color: transparent;
+    margin: 0;
+    position: initial;
+    padding: 0;
+    transform: none;
+    width: 35%;
+    justify-content: space-between;
+  }
 }
 
 button.filter:hover {

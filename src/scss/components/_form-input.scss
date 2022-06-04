@@ -1,10 +1,12 @@
 .form-container {
-  margin-bottom: 2.5rem;
-
-  background-color: $--Very-Dark-Desaturated-Blue;
   padding: 0 2rem;
+  margin-bottom: 1.8rem;
+  background-color: $--Very-Dark-Desaturated-Blue;
   border-radius: 0.8rem;
-  // margin-bottom: 18px;
+
+  @include breakpoint(tabletUp) {
+    margin-bottom: 2.5rem;
+  }
 }
 
 form {
@@ -34,22 +36,20 @@ form {
 }
 
 .todo-input {
-  //* for desktop
-  font-size: 1.8rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  //
   background: transparent;
   border: none;
   outline: none;
   width: 100%;
   padding: 15px 0 15px 12px;
-  // padding-top: 15px;
-  // padding-bottom: 15px;
   font: inherit;
-  font-size: 1.8rem;
-  // font-size: inherit;
-  // font-size: 1.4rem;
+  font-size: 1.4rem;
   color: $--Dark-Grayish-Blue;
   caret-color: hsl(220, 98%, 61%);
+  // margin-left: 1.2rem;
+
+  @include breakpoint(tabletUp) {
+    font-size: 1.8rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
