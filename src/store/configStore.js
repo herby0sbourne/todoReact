@@ -12,9 +12,28 @@ export default () => {
     },
   });
 
-  store.dispatch(addTodo({ description: 'Clean kitchen', completed: false }));
-  store.dispatch(addTodo({ description: 'Wash Car', completed: true }));
-  store.dispatch(addTodo({ description: 'Clean House', completed: false }));
+  store.dispatch(
+    addTodo({
+      description: 'Complete online JavaScript course',
+      completed: true,
+    })
+  );
+  store.dispatch(
+    addTodo({ description: 'Jog around the park 3x', completed: false })
+  );
+  store.dispatch(
+    addTodo({ description: '10 minutes meditation', completed: false })
+  );
+  store.dispatch(addTodo({ description: 'Read for 1 hour', completed: false }));
+  store.dispatch(
+    addTodo({ description: 'Pick up groceries', completed: false })
+  );
+  store.dispatch(
+    addTodo({
+      description: 'Complete Todo App on Frontend Mentor',
+      completed: false,
+    })
+  );
 
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
   return store;

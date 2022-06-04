@@ -1,0 +1,23 @@
+.todo-options {
+  color: $--Dark-Grayish-Blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 0 1.7rem;
+  height: 5.2rem;
+}
+
+.todo-filters {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+}
+
+button.filter:hover {
+  color: $--Light-Grayish-Blue;
+}
+
+.active {
+  color: hsl(220, 98%, 61%) !important;
+}

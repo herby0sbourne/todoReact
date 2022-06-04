@@ -1,0 +1,9 @@
+.heading-background {
+  background: url('/images/bg-desktop-dark.jpg') no-repeat center / cover;
+  height: 300px;
+}
+
+.light .heading-background {
+  background: url('/images/bg-desktop-light.jpg') no-repeat center / cover;
+  height: 300px;
+}

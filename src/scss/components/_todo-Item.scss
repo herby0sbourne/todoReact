@@ -1,0 +1,55 @@
+.todo {
+  font-size: 1.8rem;
+  height: 6.5rem;
+
+  color: $--Light-Grayish-Blue;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  height: 5.2rem;
+  padding: 0 2rem;
+  border-bottom: 1px solid $--Very-Dark-Grayish-Blue;
+  cursor: pointer;
+
+  &:hover {
+    .circle {
+      background-image: linear-gradient(
+        to right bottom,
+        hsl(192, 100%, 67%),
+        hsl(280, 87%, 65%)
+      );
+    }
+  }
+
+  &:hover {
+    .remove.hidden {
+      visibility: visible;
+    }
+  }
+}
+
+.circle.completed::after {
+  background: url('/images/icon-check.svg') no-repeat center / 60%,
+    linear-gradient(to right bottom, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.todo.completed {
+  color: $--Dark-Grayish-Blue;
+  text-decoration: line-through;
+}
+
+.todo-item {
+  padding-left: 1.2rem;
+  width: 100%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  // pointer-events: none;
+}
+
+.remove.hidden {
+  width: 1.8rem;
+  height: 1.8rem;
+  background: url('/images/icon-cross.svg') no-repeat center / contain;
+  visibility: hidden;
+}

@@ -1,0 +1,41 @@
+// :root {
+//   --gradient: background: linear-gradient(90deg, hsl(192, 100%, 67%) 0%, hsl(280, 87%, 65%) 100%);
+// }
+
+:root,
+:root.dark {
+  --Very-Dark-Blue: hsl(235, 21%, 11%);
+  --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+  --Light-Grayish-Blue: hsl(234, 39%, 85%);
+  --Light-Grayish-Blue-hover: hsl(236, 33%, 92%);
+  --Dark-Grayish-Blue: hsl(234, 11%, 52%);
+  --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
+  --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+}
+
+:root.light {
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --Very-Light-Grayish-Blue: hsl(236, 33%, 92%);
+  --Light-Grayish-Blue: hsl(233, 11%, 84%);
+  --Dark-Grayish-Blue: hsl(236, 9%, 61%);
+  --Very-Dark-Grayish-Blue: hsl(235, 19%, 35%);
+}
+
+// :root.dark {
+//   --Very-Dark-Blue: hsl(235, 21%, 11%);
+//   --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+//   --Light-Grayish-Blue: hsl(234, 39%, 85%);
+//   --Light-Grayish-Blue-hover: hsl(236, 33%, 92%);
+//   --Dark-Grayish-Blue: hsl(234, 11%, 52%);
+//   --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
+//   --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+// }
+
+$--Bright-Blue: hsl(220, 98%, 61%);
+
+$--Very-Dark-Blue: var(--Very-Dark-Blue);
+$--Very-Dark-Desaturated-Blue: var(--Very-Dark-Desaturated-Blue);
+$--Dark-Grayish-Blue: var(--Dark-Grayish-Blue);
+$--Bright-Blue: var(--Bright-Blue);
+$--Very-Dark-Grayish-Blue: var(--Very-Dark-Grayish-Blue);
+$--Light-Grayish-Blue: var(--Light-Grayish-Blue);

@@ -1,0 +1,27 @@
+.header {
+  padding-top: 7.5rem;
+  font-size: 2.7rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 0;
+  // padding-top: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  &-title {
+  }
+}
+
+.sun-icon {
+  width: 20px;
+  height: 20px;
+  background: url('/images/icon-sun.svg') no-repeat center / contain;
+}
+
+.moon-icon {
+  width: 20px;
+  height: 20px;
+  background: url('/images/icon-moon.svg') no-repeat center / contain;
+}

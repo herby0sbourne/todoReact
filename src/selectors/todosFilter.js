@@ -1,6 +1,6 @@
 const todosFilter = (todos, filters) => {
   const { sortBy } = filters;
-  console.log(sortBy);
+  // console.log(sortBy);
   return todos.filter((todo) => {
     if (sortBy === 'all') {
       return todo.completed === true || todo.completed === false;

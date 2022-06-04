@@ -6,14 +6,11 @@ function TodoApp() {
   return (
     <div className="container">
       <div className="header">
-        <h1>Todo</h1>
-        <span>icon go here</span>
+        <h1 className="header-title">Todo</h1>
+        <span className="sun-icon"></span>
       </div>
       <AddTodo />
     </div>
-    // <div>
-    //   <input type="text" />
-    // </div>
   );
 }
 
