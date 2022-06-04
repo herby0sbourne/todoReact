@@ -29,7 +29,7 @@
 }
 
 .circle.completed::after {
-  background: url('/images/icon-check.svg') no-repeat center / 60%,
+  background: url('./images/icon-check.svg') no-repeat center / 60%,
     linear-gradient(to right bottom, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
 }
 
@@ -50,6 +50,6 @@
 .remove.hidden {
   width: 1.8rem;
   height: 1.8rem;
-  background: url('/images/icon-cross.svg') no-repeat center / contain;
+  background: url('./images/icon-cross.svg') no-repeat center / contain;
   visibility: hidden;
 }

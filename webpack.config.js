@@ -48,7 +48,7 @@ module.exports = {
     ],
   },
 
-  devtool: 'inline-source-map',
+  devtool: isProduction ? 'source-map' : 'inline-source-map',
 
   devServer: {
     static: {
