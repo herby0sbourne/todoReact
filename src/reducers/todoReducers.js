@@ -18,6 +18,11 @@ const todoReducer = (state = [], action) => {
         }
       });
 
+    case 'REMOVE_TODO':
+      return state.filter((todo) => {
+        return todo.id !== action.id;
+      });
+
     case 'CLEAR_COMPLETED':
       return state.filter((todo) => {
         return todo.completed !== true;

@@ -19,6 +19,13 @@ export const editTodo = (id) => {
   };
 };
 
+export const removeTodo = (id) => {
+  return {
+    type: 'REMOVE_TODO',
+    id,
+  };
+};
+
 export const clearCompleted = () => {
   return {
     type: 'CLEAR_COMPLETED',
