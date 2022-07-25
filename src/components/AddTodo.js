@@ -6,8 +6,8 @@ import TodoForm from './TodoForm';
 class AddTodo extends React.Component {
   onSubmit = (todo) => {
     this.props.addTodo(todo);
-    console.log('from Add todo COMP:', todo);
-    console.log(this.props);
+    // console.log('from Add todo COMP:', todo);
+    // console.log(this.props);
   };
 
   render() {

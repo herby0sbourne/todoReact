@@ -6,8 +6,6 @@ import TodoListItem from './TodoListItem';
 import TodoOptions from './TodoOptions';
 
 function Todos(props) {
-  // console.log(props.todos);
-  // console.log(props);
   const onClick = (e) => {
     // console.log(e.target);
     // console.log(e.currentTarget);
@@ -37,14 +35,14 @@ function Todos(props) {
         )}
       </ul>
       <TodoOptions />
-      {/* todoOptions Here */}
     </div>
   );
 }
 
 const mapStateToProps = (state) => {
   return {
-    todos: todosFilter(state.todos, state.filters),
+    todos: todosFilter(state),
+    // todos: todosFilter(state.todos, state.filters),
   };
 };
 
