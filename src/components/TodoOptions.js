@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import todoFilter from '../selectors/todosFilter';
+import todosFilter from '../selectors/todosFilter';
 import todoLeft from '../selectors/todosLeft';
 import { clearCompleted } from '../actions/todoActions';
 import {
@@ -69,7 +69,9 @@ class TodoOptions extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-  const todos = todoFilter(state.todos, state.filters);
+  // const todos = todoFilter(state.todos, state.filters); // Original funtion call
+  const todos = todosFilter(state);
+
   // console.log(todos.length);
   return {
     itemsLeft: todoLeft(todos).length,
